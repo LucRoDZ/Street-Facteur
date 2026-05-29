@@ -1,74 +1,42 @@
-# ── PHYSIQUE ──────────────────────────────────────────
-GRAVITY         = 25.0    # accélération vers le bas (unités/s²)
-JUMP_FORCE      = 10.0    # impulsion verticale au saut
-MOVE_SPEED      = 6.0     # vitesse de déplacement horizontal
-GROUND_Y        = 0.0     # hauteur du sol
+# =============================================================================
+#  STREET FACTEUR — config.py
+#  Toutes les constantes de gameplay, regroupées et nommées de façon canonique.
+# =============================================================================
 
-# ── JOUEUR ────────────────────────────────────────────
-PLAYER_HP           = 100
-PLAYER_HEIGHT       = 1.0
-ATTACK_DAMAGE       = 25
-ATTACK_RANGE        = 1.8    # distance max pour toucher (unités)
-ATTACK_DURATION     = 0.25   # secondes pendant lesquelles la hitbox est active
-ATTACK_COOLDOWN     = 0.5
-DASH_SPEED          = 18.0
-DASH_DURATION       = 0.2
-DASH_COOLDOWN       = 1.0
-KNOCKBACK_FORCE     = 4.0
-KO_DURATION         = 3.0    # secondes au sol après KO
-KO_TIME_PENALTY     = 10.0   # secondes retirées au chrono quand KO
+# ── Physique & Monde ─────────────────────────────────────
+GRAVITY      = 22.0
+JUMP_FORCE   = 9.5
+MOVE_SPEED   = 6.5
+GROUND_Y     = 0.0
+STAGE_LEFT   = -5.0
+STAGE_RIGHT  = 60.0
 
-# ── ENNEMIS ───────────────────────────────────────────
-DOG_HP              = 30
-DOG_SPEED           = 4.0
-DOG_ATTACK_RANGE    = 0.9
-DOG_ATTACK_DAMAGE   = 20
-DOG_ATTACK_COOLDOWN = 1.0
-DOG_DETECT_RANGE    = 6.0
-DOG_KNOCKBACK       = 3.0
+# ── Joueur ───────────────────────────────────────────────
+PLAYER_HP        = 100
+ATTACK_DAMAGE    = 34
+ATTACK_RANGE     = 2.0
+ATTACK_COOLDOWN  = 0.4
+DASH_SPEED       = 20.0
+DASH_DURATION    = 0.18
+DASH_COOLDOWN    = 0.8
+KO_DURATION      = 2.5
 
-GRANNY_GRAB_RANGE   = 2.0
-GRANNY_GRAB_DURATION= 3.0    # secondes d'immobilisation
-GRANNY_GRAB_COOLDOWN= 5.0
-GRANNY_BREAK_HITS   = 3      # coups pour se libérer
+# ── Ennemis ──────────────────────────────────────────────
+DOG_HP            = 35
+DOG_SPEED         = 4.5
+DOG_ATTACK_DAMAGE = 15
+DOG_DETECT_RANGE  = 8.0
 
-NEIGHBOR_HP         = 40
-NEIGHBOR_THROW_COOLDOWN = 3.0
-NEIGHBOR_PROJECTILE_SPEED = 8.0
-NEIGHBOR_PROJECTILE_DAMAGE = 15
-NEIGHBOR_KNOCKBACK  = 2.0
+GRANNY_RANGE         = 2.2
+GRANNY_STUN_DURATION = 2.5
+GRANNY_MASH_REQUIRED = 4
 
-# ── LIVRAISON ─────────────────────────────────────────
-DELIVERY_RANGE      = 1.8    # distance pour déclencher la livraison
-DELIVERY_HOLD_TIME  = 1.5    # secondes à rester près de la boîte
-DELIVERY_TIME_BONUS = 10.0   # secondes gagnées par livraison réussie
+NEIGHBOR_HP       = 50
+NEIGHBOR_COOLDOWN = 2.5
+PROJECTILE_SPEED  = 9.0
 
-# ── NIVEAU ────────────────────────────────────────────
-LEVEL_TIME          = 90.0   # chrono de départ (secondes)
-STAGE_LEFT          = -3.0
-STAGE_RIGHT         = 48.0
-TOTAL_MAILBOXES     = 4
-
-# ── CAMÉRA ────────────────────────────────────────────
-CAM_BASE_FOV        = 8.0
-CAM_MIN_FOV         = 6.0
-CAM_MAX_FOV         = 14.0
-CAM_LERP_SPEED      = 5.0
-CAM_LEFT_CLAMP      = 2.0    # marge gauche
-CAM_RIGHT_CLAMP     = 2.0    # marge droite
-
-# ── COMMANDES (clavier AZERTY) ────────────────────────
-P1_LEFT     = 'q'
-P1_RIGHT    = 'd'
-P1_JUMP     = 'z'
-P1_ATTACK   = 'f'
-P1_DASH     = 'v'
-
-P2_LEFT     = 'left arrow'
-P2_RIGHT    = 'right arrow'
-P2_JUMP     = 'up arrow'
-P2_ATTACK   = 'k'
-P2_DASH     = 'l'
-
-KEY_RESTART = 'r'
-KEY_QUIT    = 'escape'
+# ── Objectifs & Score ────────────────────────────────────
+TOTAL_MAILBOXES    = 5
+DELIVERY_HOLD_TIME = 1.2
+TIME_BONUS         = 15.0
+LEVEL_TIME         = 90.0
