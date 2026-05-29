@@ -1,0 +1,6 @@
+#!/Users/theophane/Projects/StreetFacteur/Street-Facteur/venv/bin/python3
+import sys
+from direct.directscripts.eggcacher import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())
