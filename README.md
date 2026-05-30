@@ -1,9 +1,9 @@
 # Street Facteur
 ## Installation
-python -m venv venv
-source venv/bin/activate  # ou venv\Scripts\activate sur Windows
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ## Lancement
-python main.py
+python3 main.py
 ## Commandes
 Joueur 1 : Q/D déplacement | Z saut | F attaque | V dash
