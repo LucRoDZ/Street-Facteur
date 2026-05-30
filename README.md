@@ -7,4 +7,3 @@ pip install -r requirements.txt
 python main.py
 ## Commandes
 Joueur 1 : Q/D déplacement | Z saut | F attaque | V dash
-Joueur 2 : Flèches déplacement | K attaque | L dash
